@@ -1,0 +1,30 @@
+<div class="container-fluid" style="background-color: white;">
+    <div class="row ">
+        <div class="d-flex mt-3">
+            <div class="col-lg-3 mb-5">
+                <a href="" routerLink="/home" class="text-gray-600"><h4><b>Home</b></h4></a>
+            </div>
+            <!-- <div class="col-lg-3 mb-5">
+                <a href="" routerLink="/create" class="text-gray-600"><b>Shrink URL</b></a>
+            </div> -->
+            <div class="col-lg-3 mb-5">
+                <a href="" routerLink="/display" class="text-gray-600"><h4><b>URL List</b></h4></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-10 d-flex">
+            <div class="col-lg-5">
+                <label class="mr-2" for=""><b style="color: #EE6123;"> Paste a URL - </b></label>
+                <input required type="url" class="mb-2 mr-3" placeholder="Paste here" [(ngModel)]="longUrl">
+                <button class="button btn btn-primary btn-sm mt-5 mb-5" (click)="generate()">Submit</button>
+                <div class="mb-5">
+                    <h6 style="color: #EE6123;"><b>Your shrinked Url - </b></h6><a href="{{longUrl}}" target="_blank"><b>{{shortUrl}}</b></a>
+                </div>
+            </div>
+            <div class="col-log-4">
+                <img src="https://docrdsfx76ssb.cloudfront.net/static/1632941648/pages/wp-content/uploads/2020/05/illo-mobile-810x480-1.jpg" alt="img">
+            </div>
+        </div>
+    </div>
+</div>

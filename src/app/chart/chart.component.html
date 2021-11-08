@@ -1,0 +1,16 @@
+<div class="row mt-5" *ngIf="fill.length>0">
+    <h6 class="text-gray-500 mb-5">Graph Between No. of clicks and Short URL</h6>
+    <ngx-charts-bar-vertical
+    [view]="view"
+    [results]="fill"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel">
+    </ngx-charts-bar-vertical>
+</div>
+

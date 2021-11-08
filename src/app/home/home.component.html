@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 d-flex ml-5 mt-3">
+            <div class="card border-left-primary shadow mr-5 h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-uppercase mb-1">Number of Links</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{totalLinks}}</div>
+                        </div>
+                        <div class="col-auto ml-3 mr-2">
+                            <i class="fa fa-link fa-2x text-gray-300" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-left-primary shadow ml-5 h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-uppercase mb-1">Number of Clicks</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{totalClicks}}</div>
+                        </div>
+                        <div class="col-auto ml-5 mr-2">
+                            <i class="fa fa-mouse-pointer fa-2x text-gray-300" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <app-chart class="ml-5"></app-chart>
+    </div>
+</div>
+
